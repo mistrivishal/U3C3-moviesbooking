@@ -35,6 +35,7 @@ const searchMovies = async ()=>{
 
         const {Search} = await res.json()
         console.log(Search)
+        container.innerHTML = null;
         appendmovies(Search)
     }
     catch(err){
